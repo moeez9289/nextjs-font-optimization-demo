@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Watch &amp; Earn</string>
+    
+    <!-- Auth Activity -->
+    <string name="welcome_title">Welcome to Watch &amp; Earn</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="signup_button">Sign Up</string>
+    <string name="switch_to_signup">Don\'t have an account? Sign Up</string>
+    <string name="switch_to_login">Already have an account? Login</string>
+    
+    <!-- Main Activity -->
+    <string name="coin_balance">Coin Balance</string>
+    <string name="watch_ad_button">Watch Ad &amp; Earn</string>
+    <string name="daily_bonus_button">Claim Daily Bonus</string>
+    <string name="profile_button">Profile</string>
+    <string name="history_button">History</string>
+    <string name="withdrawal_button">Withdraw</string>
+    <string name="referral_button">Referral</string>
+    <string name="coins_earned">+30 Coins Earned!</string>
+    <string name="daily_bonus_claimed">+10 Daily Bonus Claimed!</string>
+    <string name="ad_not_ready">Ad not ready, please try again later</string>
+    <string name="ad_failed">Failed to load ad</string>
+    <string name="daily_bonus_already_claimed">Daily bonus already claimed today</string>
+    
+    <!-- Profile Activity -->
+    <string name="profile_title">Profile</string>
+    <string name="display_name_hint">Display Name</string>
+    <string name="email_display">Email</string>
+    <string name="update_profile_button">Update Profile</string>
+    <string name="logout_button">Logout</string>
+    <string name="profile_updated">Profile updated successfully</string>
+    
+    <!-- Withdrawal Activity -->
+    <string name="withdrawal_title">Withdrawal Request</string>
+    <string name="wallet_id_hint">Wallet ID / PayPal Email</string>
+    <string name="amount_hint">Amount (Minimum 1000 coins = $0.10)</string>
+    <string name="submit_withdrawal_button">Submit Request</string>
+    <string name="withdrawal_submitted">Withdrawal request submitted</string>
+    <string name="insufficient_coins">Insufficient coins for withdrawal</string>
+    <string name="minimum_withdrawal">Minimum withdrawal is 1000 coins</string>
+    
+    <!-- History Activity -->
+    <string name="history_title">Transaction History</string>
+    <string name="no_transactions">No transactions yet</string>
+    <string name="ad_watch">Ad Watch</string>
+    <string name="daily_bonus">Daily Bonus</string>
+    <string name="referral_bonus">Referral Bonus</string>
+    <string name="withdrawal_request">Withdrawal Request</string>
+    
+    <!-- Referral Activity -->
+    <string name="referral_title">Referral Program</string>
+    <string name="your_referral_code">Your Referral Code</string>
+    <string name="share_referral_button">Share Referral Code</string>
+    <string name="referral_info">Share your code and earn 200 coins for each friend who joins!</string>
+    <string name="share_text">Join Watch &amp; Earn and start earning money by watching ads! Use my referral code: %s</string>
+    
+    <!-- Common -->
+    <string name="loading">Loading...</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="network_error">Network error, please check your connection</string>
+    <string name="coins">coins</string>
+    <string name="conversion_rate">1000 coins = $0.10 USD</string>
+</resources>
