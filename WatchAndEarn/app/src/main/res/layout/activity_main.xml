@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary"
+    tools:context=".activities.MainActivity">
+
+    <!-- Top Gradient Background -->
+    <View
+        android:id="@+id/topGradient"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@drawable/custom_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Main Content ScrollView -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Welcome Text -->
+            <TextView
+                android:id="@+id/tvWelcome"
+                style="@style/TitleText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Welcome Back!"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Coin Balance Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardBalance"
+                style="@style/CustomCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvWelcome">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:id="@+id/tvBalanceLabel"
+                        style="@style/SubtitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/coin_balance" />
+
+                    <TextView
+                        android:id="@+id/tvCoinBalance"
+                        style="@style/CoinBalanceText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="0 coins"
+                        tools:text="1,250 coins" />
+
+                    <TextView
+                        android:id="@+id/tvUsdValue"
+                        style="@style/BodyText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="@string/conversion_rate"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:id="@+id/layoutActionButtons"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardBalance">
+
+                <!-- Watch Ad Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnWatchAd"
+                    style="@style/PrimaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/watch_ad_button"
+                    android:textSize="18sp" />
+
+                <!-- Daily Bonus Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDailyBonus"
+                    style="@style/SecondaryButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:text="@string/daily_bonus_button" />
+
+            </LinearLayout>
+
+            <!-- Navigation Menu -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardNavigation"
+                style="@style/CustomCard"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/layoutActionButtons">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Profile Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnProfile"
+                        style="@style/SecondaryButton"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/profile_button" />
+
+                    <!-- History Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnHistory"
+                        style="@style/SecondaryButton"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/history_button" />
+
+                    <!-- Withdrawal Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnWithdrawal"
+                        style="@style/SecondaryButton"
+                        android:layout_width="match_parent"
+                        android:layout_marginBottom="8dp"
+                        android:text="@string/withdrawal_button" />
+
+                    <!-- Referral Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnReferral"
+                        style="@style/SecondaryButton"
+                        android:layout_width="match_parent"
+                        android:text="@string/referral_button" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Loading Progress -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:indeterminateTint="@color/accent_color"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardNavigation" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
